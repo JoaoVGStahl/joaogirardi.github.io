@@ -7,8 +7,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -17,13 +18,15 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm i --legacy-peer-deps
+        run: npm install --legacy-peer-deps
 
-      - name: Build
+      - name: Build project
         run: npm run build
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: out
-          branch: gh-pages
+          branch: gh-pages # para onde fazer deploy
+          folder: out # pasta que será publicada
+          token: ${{ secrets.ACTIONS_DEPLOY_KEY }} # token de deploy
+          clean: true # (recomendo adicionar) limpa o histórico velho na branch
