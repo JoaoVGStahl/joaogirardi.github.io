@@ -1,12 +1,11 @@
 import type { NextConfig } from "next";
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   reactStrictMode: true,
-  basePath: "",
-  assetPrefix: "./",
+  assetPrefix: './',
   images: {
     unoptimized: true,
-  }
+  },
 };
 
 export default nextConfig;

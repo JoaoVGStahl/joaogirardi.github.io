@@ -10,7 +10,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
   // Se você estiver usando seu-username.github.io como nome do repositório, remova a linha basePath acima
 };
 
