@@ -31,9 +31,3 @@ Este é o repositório do meu portfólio pessoal, desenvolvido com Next.js, Tail
 ## Implantação
 
 Este site está configurado para ser implantado automaticamente no GitHub Pages usando GitHub Actions.
-
-## Contato
-
-- Email: jvitorstahl@hotmail.com
-- GitHub: [github.com/jvitorstahl](https://github.com/jvitorstahl)
-- LinkedIn: [linkedin.com/in/seu-perfil](https://linkedin.com/in/seu-perfil)
